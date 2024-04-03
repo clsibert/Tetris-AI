@@ -31,8 +31,8 @@ def test(feats):
 			break
 		#if no end condition, [pass] inside for loop
 	#return whatever value determines goodness, scores, lines cleared, etc
-	print state.score
-	return state.score
+	print (state.score())
+	return state.score()
 
 #if starting at all zeroes, put features in a list, if features have actual values, define as a dictionary
 
@@ -50,7 +50,7 @@ for (depth, (weights, stdev)) in enumerate(trainer, 1):
 	seed += 1 
 	
 	stable = True
-	print 'Iteration {:6d}: {:>9} {:>9}'.format(depth, 'mean', 'variation')
+	print ('Iteration {:6d}: {:>9} {:>9}'.format(depth, 'mean', 'variation'))
 	
 	for feat in feats:
 		var = abs(stdev[feat] / weights[feat])
