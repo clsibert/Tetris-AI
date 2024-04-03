@@ -1,4 +1,4 @@
-import collections
+import collections.abc
 import functools
 
 # Returns a function that converts an implementation into features with the given dependencies.
@@ -49,7 +49,7 @@ def with_transformed_state(transformer, feature):
 # The results are returned via dict, where each feature is mapped to its result.
 def evaluate(state, features):
     cache = {}
-    if isinstance(features, collections.Mapping):
+    if isinstance(features, collections.abc.Mapping):
         return {f: f(state, cache=cache) * w for (f, w) in features.items()}
     else:
         return {f: f(state, cache=cache) for f in features}

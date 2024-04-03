@@ -62,7 +62,7 @@ for x in range(len(lines)):
     line = line.rstrip().split('\t')
     
     if line[curr_zoid_ix] != 'NA':
-    	player_zoid = line[curr_zoid_ix]
+        player_zoid = line[curr_zoid_ix]
 
     working_controller = MMShort
     working_features = MMShort.keys()
