@@ -1,12 +1,12 @@
 from __future__ import division
 from heapq import nlargest
 
-import collections
+import collections.abc
 import numpy as np
 
 def cross_entropy(feats, stdev, width, keep, rng, test_f, noise_f=None, map_f=map):
     # Interpret features
-    if isinstance(feats, collections.Mapping):
+    if isinstance(feats, collections.abc.Mapping):
         # Weights provided
         feats, weights = zip(*feats.items())
         weights = list(weights)
@@ -16,7 +16,7 @@ def cross_entropy(feats, stdev, width, keep, rng, test_f, noise_f=None, map_f=ma
         weights = [0] * len(feats)
 
     # Interpret stdev
-    if isinstance(stdev, collections.Mapping):
+    if isinstance(stdev, collections.abc.Mapping):
         # Per-feature stdev
         stdev = [stdev[feat] for feat in feats]
     else:

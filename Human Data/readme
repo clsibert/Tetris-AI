@@ -1,0 +1,5 @@
+worst_full_game.tsv - highest scoring game of player with lowest criterion score
+reg_best_full_game.tsv - highest scoring game of player with highest criterion score from labratory population
+expert_full_game.tsv - game played by expert at CTWC tournament
+
+Games played with time pressure, different seeds/sequences

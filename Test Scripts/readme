@@ -1,0 +1,5 @@
+Basic scripts 
+
+TestGame - playes one game using simulator as specified in code
+LearnTest - performs CERL, produces optimized set of weights for specified features
+PredictTest - given a csv of human game data, outputs simulator's chosen moves for each board state

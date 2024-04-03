@@ -53,16 +53,16 @@ sim = simulator.simulate(state, zoid_gen(zoids.classic, random.Random(seed)), mo
 # Inside this loop, print episode level data to file (take a good look at state and delta classes in game.py)
 
 for(episode, state) in enumerate(sim, 1):
-	print episode, state.delta.zoid
-	print state.board
+	print (episode, state.delta.zoid)
+	print (state.board)
 	print
 
 	# set some kind of limit
 	if episode >= 525:
 		break
 
-print state.score()
-print state.lines_cleared(1)
-print state.lines_cleared(2)
-print state.lines_cleared(3)
-print state.lines_cleared(4)
+print (state.score())
+print (state.lines_cleared(1))
+print (state.lines_cleared(2))
+print (state.lines_cleared(3))
+print (state.lines_cleared(4))
