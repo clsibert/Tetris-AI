@@ -43,7 +43,7 @@ state = State(None, Board(20,10))
 
 ## Pick a seed (if using)
 
-seed = 101
+seed = 10101
 
 ## Create simulator "object"
 
