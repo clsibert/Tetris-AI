@@ -10,6 +10,6 @@ Simulations of Tetris controlled by AI developed through a variety of methods (c
 1. If you have do not have it, install git. git needs to be in PATH, which is automatically done while installing git with default options
   
 2. In CMD, run this command.
-    pip install git+https://github.com/CogWorks/Tetris-AI
+    pip install git+https://github.com/clsibert/Tetris-AI
     
     Cursory explanation of the syntax: pip install git+link_to_the_git_page
